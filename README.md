@@ -10,4 +10,5 @@ Follows a standard GitHub workflow for cloning and requiring implementations usi
 1. Data Structures
     - [List](./data_structures/list)
 2. Algorithms
-    - [FizzBuzz](./challenges/fizzbuzz)
+    - [Array_shift](./challenges/array_shift
+    )
