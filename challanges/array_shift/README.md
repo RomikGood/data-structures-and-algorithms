@@ -9,7 +9,8 @@ function takes an array and a value and insert that value in the middle of the a
 Test file implements three tests for insert_shift function.
 
 ## Getting Started
-run test_array_shift to to test the function
+clone and fork the files and run the functions
+
 
 ## Architecture
 Python 3.7, Pytest

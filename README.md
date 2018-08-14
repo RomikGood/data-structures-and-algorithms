@@ -1,27 +1,13 @@
-# data-structures-and-algorithms
+# Data Structure & Algorithms
+A repository dedicated to my passion and appreciation for all things data structures and algorithms!
 
+## Installation
+Follows a standard GitHub workflow for cloning and requiring implementations using my favorite language of choice, wat.
 
-**Author**: Roman Kireev
+<!-- This is some fancy code block for cloning my repo and making all the installs happen -->
 
-**Version**: 1.0.0   
-
-## Overview
-collection of algorithms and data structrures
-
-## Getting Started
-
-
-## Architecture
-Python 3.7, Pytest
-GitHub
-
-## API
-no API
-
-## Change Log
-
-08-13-2018 4:59pm - Created place_order and print_order functions.
-
-## License
-This project is licensed under the MIT license
--->
+## Table of Contents
+1. Data Structures
+    - [List](./data_structures/list)
+2. Algorithms
+    - [FizzBuzz](./challenges/fizzbuzz)
