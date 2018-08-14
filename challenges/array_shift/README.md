@@ -23,6 +23,10 @@ no API
 
 08-13-2018 4:59pm - Created place_order and print_order functions.
 
+## Image
+![alt text](https://github.com/RomikGood/data-structures-and-algorithms/blob/array_shift/assets/20180814_142327.jpg)
+
 ## License
 This project is licensed under the MIT license
 -->
+
