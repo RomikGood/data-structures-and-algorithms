@@ -11,7 +11,7 @@ def binary_search(arr, key):
             return mid
             
  
-        # If ket is greater, ignore left half
+        # If key is greater, ignore left half
         elif arr[mid] < key:
             start = mid + 1
  
@@ -23,6 +23,6 @@ def binary_search(arr, key):
      
 
     
-arr = [1,4,6,8,14,45]
-key = 11
-print(binary_search(arr, key))
+# arr = [1,4,6,8,14,45]
+# key = 11
+# print(binary_search(arr, key))
