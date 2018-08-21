@@ -20,19 +20,11 @@ class LinkedList(object):
     def __len__(self):
         return self._length
 
-    # def __iter__(self):
-    #     if self.head:
-    #         self._current = self.head
-    #     return self
-  
-    # def __next__(self):
-    #     pass
 
     def insert(self, val):
         self.head = Node(val, self.head)
         self._length += 1
 
-    # def includes(self, val: str, data: int) -> bool:
     def includes(self, val) -> bool:
         current = self.head
 
@@ -41,3 +33,41 @@ class LinkedList(object):
                 return True
             current = current._next
         return False
+
+    def append(self, val):
+        current = self.head
+        while current._next:
+            current = current._next
+        new_node = Node(val)
+        current._next = new_node
+        self._length += 1
+
+    def add_before(self, targetValue, value):
+        newNode = Node(value)
+        node = self.head
+        if node.val == targetValue:
+            newNode._next = self.head
+            self.head = newNode
+
+        while node._next is not None:
+            if node._next.val == targetValue:
+                newNode._next = node._next
+                node._next = newNode
+                return
+            else:
+                node = node._next
+
+    def add_after(self, targetValue, value):
+        newNode = Node(value)
+        node = self.head
+        while node._next is not None:
+            if node.val == targetValue:
+                newNode._next = node._next
+                node._next = newNode
+                return
+            else:
+                node = node._next
+        if node.val == targetValue:
+            newNode._next = None
+            node.val = newNode
+        
