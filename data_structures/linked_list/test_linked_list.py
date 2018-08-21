@@ -47,11 +47,44 @@ def test_length_of_list_increases_on_insertion(empty_list):
 
 
 def test_includes_returns_true_if_exists(small_list):
-    # actual = small_list.includes(4)
-    assert small_list.includes(4) is True
-    # assert small_list.includes(1) is True
+    actual = small_list.includes(4)
+    assert actual is True
+    assert small_list.includes(1) is True
 
 
-# def test_includes_returns_false_if_not_exists(small_list):
-#     assert small_list.includes(5) is False
-    # assert small_list.includes(0) is False
+def test_includes_returns_false_if_not_exists(small_list):
+    assert small_list.includes(100) is False
+    assert small_list.includes(0) is False
+
+
+def test_append_has_appended_value(small_list):
+    small_list.append(5)
+    assert small_list.includes(5) is True
+
+
+def test_append_has_correct_length(small_list):
+    small_list.append(5)
+    assert small_list._length == 5
+
+
+def test_add_before_has_added_value(small_list):
+    small_list.add_before(4, 5)
+    assert small_list.includes(5)
+
+
+def test_add_after_has_added_value(small_list):
+    small_list.add_after(4, 5)
+    assert small_list.includes(5)
+
+
+def test_add_before_has_correct_length(small_list):
+    small_list.append(5)
+    assert small_list._length == 5
+
+
+def test_add_after_has_correct_length(small_list):
+    small_list.append(5)
+    assert small_list._length == 5
+
+
+
