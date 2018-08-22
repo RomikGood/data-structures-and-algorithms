@@ -68,6 +68,21 @@ class LinkedList(object):
             else:
                 node = node._next
         if node.val == targetValue:
-            newNode._next = None
+            # newNode._next = None
             node.val = newNode
         
+    def kth_from_end(self, kth):
+        current = self.head
+        count = 0
+        while current._next is not None:
+            count += 1
+            current = current._next
+        current = self.head
+        var = count - kth
+        while var is not 0:
+            current = current._next
+            var -= 1
+        return current.val
+
+
+

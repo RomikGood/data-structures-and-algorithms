@@ -78,13 +78,28 @@ def test_add_after_has_added_value(small_list):
 
 
 def test_add_before_has_correct_length(small_list):
+    '''this function tests if output link list has correct length
+    '''
     small_list.append(5)
     assert small_list._length == 5
 
 
 def test_add_after_has_correct_length(small_list):
+    '''this function tests if output linked list has correct length
+    '''
     small_list.append(5)
     assert small_list._length == 5
 
 
+def test_kth_from_end_return_corrct_value(small_list):
+    '''this function tests if function return correct kth value
+    '''
+    assert small_list.kth_from_end(2) == 3
+    assert small_list.kth_from_end(1) == 2
 
+
+def test_kth_from_end_length_greater_then_value(small_list):
+    '''this function tests if argument is greater then the length on link list
+    '''
+    with pytest.raises(AttributeError):
+        small_list.test_kth_from(5)
