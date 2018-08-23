@@ -24,6 +24,7 @@ def test_linked_list_exists():
 def test_create_instance_of_list():
     ll = LinkedList()
     assert isinstance(ll, LinkedList)
+   
 
 
 def test_default_property_head(empty_list):
@@ -38,6 +39,8 @@ def test_insertion_successful(empty_list):
     assert empty_list.head is None
     empty_list.insert(25)
     assert empty_list.head.val == 25
+    
+
 
 
 def test_length_of_list_increases_on_insertion(empty_list):
@@ -82,6 +85,7 @@ def test_add_before_has_correct_length(small_list):
     '''
     small_list.append(5)
     assert small_list._length == 5
+    
 
 
 def test_add_after_has_correct_length(small_list):
