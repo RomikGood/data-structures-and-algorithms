@@ -107,3 +107,10 @@ def test_kth_from_end_length_greater_then_value(small_list):
     '''
     with pytest.raises(AttributeError):
         small_list.test_kth_from(5)
+
+
+def test_kth_from_is_zero(small_list):
+    '''this function tests if argument is zero from the end
+    '''
+    with pytest.raises(AttributeError):
+        small_list.test_kth_from(0)
