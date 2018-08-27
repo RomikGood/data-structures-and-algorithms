@@ -24,6 +24,7 @@ class LinkedList(object):
     def insert(self, val):
         self.head = Node(val, self.head)
         self._length += 1
+        
 
     def includes(self, val) -> bool:
         current = self.head
@@ -43,6 +44,9 @@ class LinkedList(object):
         self._length += 1
 
     def add_before(self, targetValue, value):
+        '''function takes two arguments target value and value and inserts 
+        before it after it
+        '''
         newNode = Node(value)
         node = self.head
         if node.val == targetValue:
@@ -58,6 +62,9 @@ class LinkedList(object):
                 node = node._next
 
     def add_after(self, targetValue, value):
+        '''function takes two arguments target value and value and inserts 
+        value after it.
+        '''
         newNode = Node(value)
         node = self.head
         while node._next is not None:
@@ -72,6 +79,9 @@ class LinkedList(object):
             node.val = newNode
         
     def kth_from_end(self, kth):
+        '''Function takes integer k and returns value of node that is 
+        number k from the end of the linked list
+        '''
         current = self.head
         count = 0
         while current._next is not None:

@@ -7,7 +7,7 @@ no API
 
 
 ## Image
-![alt text](https://github.com/RomikGood/data-structures-and-algorithms/blob/ll_insertions/assets/ll_insetions.JPG)
+![alt text](https://codefellows.slack.com/files/U9G23J8SV/FCERTDBE2/image_from_ios.jpg)
 
 ## License
 This project is licensed under the MIT license
