@@ -56,16 +56,16 @@ class LinkedList:
         prev_node.next = new_node
 
     def merge_sorted(self, llist):
-        '''this function takes linked list as a parametr and merges
+        '''function takes linked list as a parameter and merges
         it with orrriginal linked list
         '''
         p = self.head
         q = llist.head
         temp = None
 
-        if not p:  # if only one list exists
+        if not p:  # if only one list exists return another
             return q
-        if not q:  # if only one list exists
+        if not q:  # if only one list exists return another
             return p
         if p and q:
             if p.data <= q.data:
