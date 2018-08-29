@@ -13,7 +13,7 @@ class AnimalShelter:
             self.animals.remove(pref)
             return pref
         else:
-            return self.animals.pop(0)
+            return self.animals.pop()
 
     def size(self):
         return len(self.animals)
@@ -29,5 +29,5 @@ q.enqueue('dog')
 q.enqueue('dog')
 
 print(q.get())
-print(q.dequeue('cat'))
+print(q.dequeue('pref'))
 print(q.get())
