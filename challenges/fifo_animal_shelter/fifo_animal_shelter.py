@@ -8,7 +8,7 @@ class AnimalShelter:
     def enqueue(self, animal):
         self.animals.insert(0, animal)
 
-    def dequeue(self, pref):
+    def dequeue(self, pref=None):
         if pref in self.animals:
             self.animals.remove(pref)
             return pref
@@ -29,5 +29,5 @@ q.enqueue('dog')
 q.enqueue('dog')
 
 print(q.get())
-print(q.dequeue('pref'))
+print(q.dequeue('dog'))
 print(q.get())
