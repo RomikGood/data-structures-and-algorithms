@@ -1,14 +1,13 @@
 ## Challenge
 
-Get Edges
+Find common values in 2 binary trees.
 
-## Change Log
-
-
-
+## Features
+Write a function called tree_intersection that takes two binary tree parameters.
+Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
 
 ## Image
-![alt text](https://codefellows.slack.com/files/U9X28UK27/FCW8PTN7M/20180918_140808.jpg)
+![alt text](https://github.com/RomikGood/data-structures-and-algorithms/blob/master/challenges/tree_itersection/20180925_135933.jpg)
 
 ## License
 This project is licensed under the MIT license
