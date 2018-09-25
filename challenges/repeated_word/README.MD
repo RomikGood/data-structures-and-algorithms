@@ -6,4 +6,4 @@ Without utilizing any of the built-in library methods available to your language
 
 ## Solution
 
-![alt text]()
+![alt text](https://github.com/RomikGood/data-structures-and-algorithms/blob/master/challenges/repeated_word/repeated_word.jpg)
