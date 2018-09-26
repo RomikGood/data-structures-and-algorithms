@@ -1,15 +1,14 @@
-## API
-no API
+## Challenge
+
+Get Edges
 
 ## Change Log
 
 
-09-18-2018 10pm - Created a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
 
-08-29-2018 created tests for animal shelter class
 
 ## Image
-![alt text]()
+![alt text](https://codefellows.slack.com/files/U9X28UK27/FCW8PTN7M/20180918_140808.jpg)
 
 ## License
 This project is licensed under the MIT license

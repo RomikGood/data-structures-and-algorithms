@@ -36,7 +36,7 @@ class BinaryTree:
         else:    
             current = self.root
             while current:
-                if value == current.vaulue:
+                if value == current.value:
                     raise ValueError('Value already exists')
                 if value < current.value:
                     if current.left is None:

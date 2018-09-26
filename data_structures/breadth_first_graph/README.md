@@ -7,7 +7,7 @@ no API
 
 
 ## Image
-![alt text](image)
+![alt text](https://github.com/RomikGood/data-structures-and-algorithms/blob/master/data_structures/breadth_first_graph/graph_breadth_first.jpg)
 
 ## License
 This project is licensed under the MIT license
