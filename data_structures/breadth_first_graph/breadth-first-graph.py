@@ -1,40 +1,10 @@
-class Graph:
-    def __init__(self):
-        self.graph = {}
+def breadth_first_graph(graph=None):
+    if graph is None:
+        raise AttributeError
 
-    def __repr__(self):
-        pass
+    visited={}
+    output=[]
 
-    def __str__(self):
-        pass
+    for key in graph.keys():
+        if key in visited[]
 
-    def __len__(self):
-        pass
-
-    def add_vert(self, val):
-        """
-        """
-        # add vertice to self.graph
-        # check to see if the vert already exists: if so raise exception
-        # create a helper method
-
-    def has_vert(self, val):
-        """
-        """
-        # checks for a key in the graph
-
-    def add_edge(self, v1, v2, weight):
-        """
-        """
-        # add a relationship and weight between two verts
-        # don't forget to validate
-
-    def get_neighbors(self, val):
-        """
-        """
-        # Given a val (key), return all all adjacent verts
-
-    def breadth_rist(self, val):
-        """
-        """
-        # Given a node Implement a breadth-first traversal on a graph.
