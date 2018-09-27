@@ -5,7 +5,7 @@ class HashTable:
 
     def __init__(self, size=8192):
         self.table_size = size
-        self.hashtable = []
+        self.hashtable = []*size
 
     def __repr__(self):
         pass
@@ -29,14 +29,9 @@ class HashTable:
             value: the value to store
         """
         hash = self._hash_key(key)
-        if self.hashtable[hash] is not None:
-            #the slot is empty
-            self.hashtable[hash] = value
-        else:
-            
-
+        self.hashtable[hash] = value
         
-
+            
     def get(self, key):
         """Retrieve a value from the hash table by key.
         args:
@@ -52,4 +47,12 @@ class HashTable:
             key: a string to find the value in the hash table
         returns: the value stored with the key
         """
-        pass
+        hash = self._hash_key(key)
+        try:
+            self.hashtable.pop(hash)
+            return self.hashtable[hash]
+        except KeyError:
+            print("No such key")
+
+
+            
