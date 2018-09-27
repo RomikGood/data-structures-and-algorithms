@@ -8,7 +8,7 @@ def table_join(table_a, table_b):
         if key in table_b:
             cache.append(table_b[key])
         else:
-            cache.append('None')
+            cache.append(None)
         output.append(cache)
         cache = []
 
