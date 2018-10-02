@@ -7,7 +7,5 @@ def selection(lst):
                 cur_min_ind = j
         lst[i], lst[cur_min_ind] = lst[cur_min_ind], lst[i]
     return lst
-               
-
 
 
